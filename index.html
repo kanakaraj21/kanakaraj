@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Management System</title>
+    <!-- Google Fonts for a professional look -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Title and image -->
+        <div class="title-container">
+            <h1>Expense Management System</h1>
+            <img src="image.jpg" alt="Expense Management" class="expense-img">
+        </div>
+
+        <!-- Form container for login and registration -->
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <!-- Login Form -->
+            <form id="login" class="input-group" method="POST" action="login.php">
+                <input type="text" class="input-field" name="email" placeholder="Email" required>
+                <input type="password" class="input-field" name="password" placeholder="Password" required>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+            <!-- Register Form -->
+            <form id="register" class="input-group" method="POST" action="register.php">
+                <input type="text" class="input-field" name="username" placeholder="Username" required>
+                <input type="email" class="input-field" name="email" placeholder="Email" required>
+                <input type="password" class="input-field" name="password" placeholder="Password" required>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
